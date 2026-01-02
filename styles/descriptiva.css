@@ -1,0 +1,322 @@
+/* ================= HERO (Descriptiva) ================= */
+.hero-wrap{
+  border-radius: 20px;
+  padding: 24px 26px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)) !important;
+  border: 1px solid rgba(148,163,184,0.22) !important;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.35) !important;
+  backdrop-filter: blur(10px);
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.pill{
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+  font-size:.75rem;
+  letter-spacing:1.4px;
+  text-transform:uppercase;
+  color:rgba(226,232,240,.90) !important;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(148,163,184,.25) !important;
+  background:rgba(2,6,23,.25) !important;
+  margin-bottom:12px;
+}
+
+.pill-dot{
+  width:8px;
+  height:8px;
+  border-radius:999px;
+  background:#22D3EE !important;
+  box-shadow:0 0 0 3px rgba(34,211,238,.15) !important;
+}
+
+.hero-title{
+  font-size:3rem;
+  font-weight:900;
+  margin:0;
+}
+
+.accent{ color:#22D3EE !important; }
+
+.hero-sub{
+  margin-top:10px;
+  color:rgba(226,232,240,.85) !important;
+}
+
+.sep{
+  margin:12px 0 22px;
+  height:1px;
+  background:rgba(148,163,184,.25) !important;
+}
+
+/* ================= PANEL (Requisitos) ================= */
+.panel{
+  background:linear-gradient(180deg, rgba(30,41,59,.85), rgba(15,23,42,.78)) !important;
+  border:1px solid rgba(34,211,238,.30) !important;
+  border-radius:18px !important;
+  padding:16px !important;
+  box-shadow:0 14px 34px rgba(0,0,0,.32) !important;
+  margin-bottom:18px !important;
+}
+
+.panel-title{
+  font-weight:900 !important;
+  margin-bottom:6px !important;
+  color:#FFFFFF !important;
+}
+
+.panel small{
+  color:rgba(226,232,240,.85) !important;
+}
+
+/* ✅ IMPORTANTE: Streamlit a veces sobreescribe code, aquí lo forzamos */
+.panel code{
+  color:#07101D !important;
+  background:rgba(34,211,238,.95) !important;
+  border-radius:999px !important;
+  padding:2px 10px !important;
+  font-weight:900 !important;
+  font-size:.78rem !important;
+  border: none !important;
+  box-shadow: 0 10px 25px rgba(34,211,238,.12) !important;
+}
+
+/* ================= SIDEBAR (Fix) ================= */
+section[data-testid="stSidebar"]{
+  background:linear-gradient(180deg, rgba(2,6,23,.75), rgba(15,23,42,.95)) !important;
+  border-right:1px solid rgba(148,163,184,.18) !important;
+}
+
+section[data-testid="stSidebar"] *{
+  color:rgba(255,255,255,.92) !important;
+}
+
+section[data-testid="stSidebar"] input{
+  color:#0F172A !important;
+  font-weight:700 !important;
+}
+
+/* Tags del multiselect */
+[data-baseweb="tag"]{
+  background:#EF4444 !important;
+  color:white !important;
+  font-weight:800 !important;
+  border-radius:8px !important;
+}
+
+/* ================= FILE UPLOADER FIX ================= */
+[data-testid="stFileUploader"]{
+  color:#FFFFFF !important;
+}
+
+[data-testid="stFileUploader"] section{
+  background:rgba(30,41,59,.75) !important;
+  border:1px dashed rgba(34,211,238,.55) !important;
+  border-radius:16px !important;
+}
+
+[data-testid="stFileUploader"] label,
+[data-testid="stFileUploader"] span,
+[data-testid="stFileUploader"] p,
+[data-testid="stFileUploader"] small{
+  color:rgba(255,255,255,.92) !important;
+  font-weight:700 !important;
+}
+
+[data-testid="stFileUploader"] svg{
+  fill:#22D3EE !important;
+}
+
+/* Botón interno del uploader */
+[data-testid="stFileUploader"] button{
+  border-radius:14px !important;
+  font-weight:900 !important;
+  text-transform:uppercase !important;
+  letter-spacing:1px !important;
+  background:linear-gradient(135deg,#22D3EE,#38BDF8,#60A5FA) !important;
+  color:#07101D !important;
+  border:none !important;
+}
+
+/* ================= METRICS ================= */
+[data-testid="stMetricValue"]{
+  font-weight:900 !important;
+  color:#FFFFFF !important;
+}
+
+[data-testid="stMetricLabel"]{
+  color:rgba(226,232,240,.85) !important;
+  font-weight:800 !important;
+}
+
+/* ================= ALERTS (st.info / st.warning / st.error) ================= */
+/* Para que el “Sube un CSV…” se vea como tu diseño anterior */
+[data-testid="stAlert"]{
+  border-radius: 16px !important;
+  border: 1px solid rgba(148,163,184,0.18) !important;
+  background: rgba(2,6,23,0.35) !important;
+  color: rgba(226,232,240,0.92) !important;
+}
+[data-testid="stAlert"] *{
+  color: rgba(226,232,240,0.92) !important;
+}
+
+/* ================= BUTTONS (Descargas) ================= */
+div.stDownloadButton > button{
+  border-radius:14px !important;
+  font-weight:900 !important;
+  text-transform:uppercase !important;
+  letter-spacing:1px !important;
+  background:linear-gradient(135deg,#22D3EE,#38BDF8,#60A5FA) !important;
+  color:#07101D !important;
+  border:none !important;
+}
+
+/* =========================================================
+   NUEVO: INSIGHTS + TABLAS PRO (cards + tablas dark HTML)
+========================================================= */
+
+/* ====== INSIGHTS (cards) ====== */
+.insights-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+.insight-card{
+  background: linear-gradient(180deg, rgba(30,41,59,.72), rgba(2,6,23,.55));
+  border: 1px solid rgba(148,163,184,.22);
+  border-radius: 16px;
+  padding: 16px 18px;
+  box-shadow: 0 14px 30px rgba(148,163,184,.12); /* sombra gris */
+  backdrop-filter: blur(8px);
+}
+
+.insight-title{
+  font-weight: 900;
+  letter-spacing: .4px;
+  font-size: 1.05rem;
+  color: rgba(255,255,255,.95);
+  margin: 0 0 8px 0;
+}
+
+.insight-text{
+  margin: 0;
+  font-size: 1rem;       /* más grande */
+  line-height: 1.6;
+  color: rgba(226,232,240,.92);
+  text-align: justify;   /* justificado */
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .insights-grid{ grid-template-columns: 1fr; }
+}
+
+/* ====== TABLAS (HTML styled) ====== */
+.table-wrap{
+  background: linear-gradient(180deg, rgba(30,41,59,.65), rgba(2,6,23,.45));
+  border: 1px solid rgba(148,163,184,.18);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 14px 30px rgba(0,0,0,.35);
+  overflow-x: auto;
+}
+
+.table-wrap table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.table-wrap thead th{
+  background: rgba(2,6,23,.75);
+  color: rgba(255,255,255,.95);
+  font-weight: 900;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(148,163,184,.22);
+}
+
+.table-wrap tbody td{
+  color: rgba(226,232,240,.92);
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(148,163,184,.12);
+}
+
+.table-wrap tbody tr:nth-child(even){
+  background: rgba(255,255,255,.03);
+}
+.table-wrap tbody tr:nth-child(odd){
+  background: rgba(255,255,255,.01);
+}
+
+/* =========================================================
+   NUEVO: WORD DOWNLOAD (CARD + BOTÓN GENERAR)
+========================================================= */
+
+/* Card contenedora para el bloque Word */
+.word-card{
+  background: linear-gradient(180deg, rgba(30,41,59,.72), rgba(2,6,23,.55));
+  border: 1px solid rgba(148,163,184,.22);
+  border-radius: 18px;
+  padding: 16px 18px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px);
+  margin-top: 16px;
+}
+
+.word-title{
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: rgba(255,255,255,.95);
+  margin: 0 0 6px 0;
+  letter-spacing: .2px;
+}
+
+.word-sub{
+  color: rgba(226,232,240,.80);
+  font-size: .85rem;
+  margin: 0 0 14px 0;
+}
+
+/* Botón Generar Word (st.button) con look igual a descargas */
+div[data-testid="stButton"] > button{
+  border-radius:14px !important;
+  font-weight:900 !important;
+  text-transform:uppercase !important;
+  letter-spacing:1px !important;
+  background:linear-gradient(135deg,#22D3EE,#38BDF8,#60A5FA) !important;
+  color:#07101D !important;
+  border:none !important;
+}
+
+/* Responsive: botones a ancho completo en móvil */
+@media (max-width: 700px){
+  div[data-testid="stButton"] > button,
+  div.stDownloadButton > button{
+    width: 100% !important;
+  }
+}
+ /* ================= FIX: BOTÓN GENERAR WORD ================= */
+
+/* Forzar botón Generar Word como rectángulo ancho */
+div[data-testid="stButton"] > button{
+  width: 100% !important;              /* ancho completo */
+  min-height: 52px !important;         /* alto tipo botón descarga */
+  border-radius: 14px !important;      /* rectangular suave */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;      /* evita que se rompa el texto */
+}
+
+/* Evita que el texto se vaya en vertical */
+div[data-testid="stButton"] > button span{
+  white-space: nowrap !important;
+}

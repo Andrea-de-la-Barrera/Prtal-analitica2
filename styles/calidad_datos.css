@@ -1,0 +1,484 @@
+/* =========================
+   OCULTAR UI STREAMLIT
+========================= */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* =========================
+   FONDO DARK PREMIUM
+========================= */
+.stApp{
+  background: radial-gradient(1200px 700px at 15% -10%, rgba(34,211,238,0.18) 0%, rgba(15,23,42,0) 55%),
+              radial-gradient(900px 550px at 85% 0%, rgba(56,189,248,0.10) 0%, rgba(15,23,42,0) 60%),
+              linear-gradient(180deg, #0B1220 0%, #0F1B2D 100%);
+  color: #FFFFFF;
+}
+
+.block-container{
+  max-width: 1200px;
+  padding-top: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero-wrap{
+  border-radius: 20px;
+  padding: 24px 26px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.03) 100%);
+  border: 1px solid rgba(148,163,184,0.22);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+.hero-wrap:before{
+  content: "";
+  position: absolute;
+  inset: -120px -80px auto auto;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(34,211,238,0.25) 0%, rgba(34,211,238,0) 65%);
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.pill{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: rgba(226,232,240,0.85);
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(148,163,184,0.25);
+  background: rgba(2,6,23,0.25);
+  width: fit-content;
+  margin-bottom: 12px;
+}
+.pill-dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #22D3EE;
+  box-shadow: 0 0 0 3px rgba(34,211,238,0.15);
+}
+
+.hero-title{
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin: 0;
+  line-height: 1.05;
+  color: #FFFFFF;
+}
+.accent{ color: #22D3EE; }
+
+.hero-sub{
+  margin-top: 10px;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: rgba(226,232,240,0.78);
+  max-width: 900px;
+}
+
+.sep{
+  margin: 12px 0 22px 0;
+  position: relative;
+  height: 18px;
+}
+.sep:before{
+  content:"";
+  position:absolute;
+  left:0; right:0;
+  top:9px;
+  height:1px;
+  background: rgba(148,163,184,0.25);
+}
+.sep:after{
+  content:"";
+  position:absolute;
+  left:0;
+  top:8px;
+  height:3px;
+  width:110px;
+  background: #22D3EE;
+  border-radius: 999px;
+  box-shadow: 0 10px 25px rgba(34,211,238,0.18);
+}
+
+/* =========================
+   TITULOS
+========================= */
+.section-title{
+  font-size: 1.35rem;
+  font-weight: 900;
+  margin: 0 0 14px 0;
+  color: #FFFFFF;
+}
+
+/* =========================
+   PANEL (REQUISITOS)
+========================= */
+.panel{
+  background: linear-gradient(180deg, rgba(30,41,59,0.85), rgba(15,23,42,0.78));
+  border: 1px solid rgba(34,211,238,0.30);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.32);
+  margin-bottom: 18px;
+  position: relative;
+  overflow: hidden;
+}
+.panel:before{
+  content:"";
+  position:absolute;
+  inset:-90px -120px auto auto;
+  width:260px; height:260px;
+  background: radial-gradient(circle, rgba(34,211,238,0.14) 0%, rgba(34,211,238,0) 62%);
+  filter: blur(6px);
+  pointer-events:none;
+}
+.panel-title{
+  font-weight: 900;
+  margin-bottom: 6px;
+  color: rgba(255,255,255,0.96);
+}
+.panel-icon{
+  width:44px;height:44px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(34,211,238,.35);
+  background:rgba(2,6,23,.25);
+  color:#22D3EE;
+  font-size:1.2rem;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+section[data-testid="stSidebar"]{
+  background: linear-gradient(180deg, rgba(2,6,23,0.75), rgba(15,23,42,0.95));
+  border-right: 1px solid rgba(148,163,184,0.18);
+}
+section[data-testid="stSidebar"] *{
+  color: rgba(255,255,255,0.92) !important;
+}
+
+/* Inputs sidebar (bonitos) */
+section[data-testid="stSidebar"] .stNumberInput input{
+  background: rgba(2,6,23,0.65);
+  border: 1px solid rgba(148,163,184,0.28);
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-weight: 800;
+}
+section[data-testid="stSidebar"] .stSlider{
+  margin-bottom: 10px;
+}
+section[data-testid="stSidebar"] h2{
+  font-size: 1.05rem;
+  font-weight: 900;
+  margin-top: 12px;
+}
+
+/* =========================
+   FILE UPLOADER
+========================= */
+[data-testid="stFileUploader"] section{
+  background: rgba(30,41,59,0.75) !important;
+  border: 1px dashed rgba(34,211,238,0.55) !important;
+  border-radius: 16px;
+}
+[data-testid="stFileUploader"] label,
+[data-testid="stFileUploader"] span,
+[data-testid="stFileUploader"] p,
+[data-testid="stFileUploader"] small{
+  color: rgba(255,255,255,0.92) !important;
+  font-weight: 700;
+}
+[data-testid="stFileUploader"] svg{
+  fill:#22D3EE !important;
+}
+
+/* =========================
+   METRICS
+========================= */
+[data-testid="stMetricValue"]{
+  font-weight: 900;
+  color: #FFFFFF;
+}
+[data-testid="stMetricLabel"]{
+  color: rgba(226,232,240,0.85);
+  font-weight: 800;
+}
+
+/* =========================
+   BOTONES
+========================= */
+div.stDownloadButton > button,
+div.stFileUploader button{
+  border-radius:14px !important;
+  font-weight:900 !important;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  background: linear-gradient(135deg, #22D3EE 0%, #38BDF8 55%, #60A5FA 100%) !important;
+  color: #07101D !important;
+  border: none !important;
+  padding: 0.78rem 1rem !important;
+  box-shadow: 0 14px 30px rgba(34,211,238,0.18);
+  transition: filter .15s ease, transform .15s ease;
+}
+div.stDownloadButton > button:hover{
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+/* =========================
+   DATAFRAME
+========================= */
+[data-testid="stDataFrame"]{
+  border-radius:16px;
+  overflow:hidden;
+  border:1px solid rgba(148,163,184,0.18);
+}
+
+/* =========================
+   SIDEBAR COMPACT (GUIA + CONFIG)
+========================= */
+.sidebar-help{ margin-bottom: 8px; }
+
+.sidebar-help h4{
+  margin: 0 0 6px 0;
+  font-size: .95rem;
+  font-weight: 900;
+  color: rgba(226,232,240,.95) !important;
+}
+
+.sidebar-help ul{
+  margin: 0;
+  padding-left: 16px;
+  line-height: 1.35;
+  font-size: .86rem;
+  color: rgba(226,232,240,.88) !important;
+}
+
+.sidebar-help li{ margin: 4px 0; }
+
+.sidebar-tip{
+  margin-top: 6px;
+  font-size: .78rem;
+  color: rgba(148,163,184,.85) !important;
+}
+
+.sidebar-sep{
+  height: 1px;
+  background: rgba(148,163,184,.18);
+  margin: 10px 0 8px 0;
+}
+
+.sidebar-title{
+  margin: 0 0 6px 0;
+  font-size: .95rem;
+  font-weight: 900;
+  color: rgba(226,232,240,.95) !important;
+}
+
+/* =========================
+   INTERPRETACIÓN (PRO CARD)
+========================= */
+.interpret-card{
+  border-radius: 18px;
+  padding: 18px 18px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)) !important;
+  border: 1px solid rgba(148,163,184,0.22) !important;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.35) !important;
+  backdrop-filter: blur(10px);
+  margin-top: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.interpret-card:before{
+  content:"";
+  position:absolute;
+  inset:-120px -90px auto auto;
+  width:320px; height:320px;
+  background: radial-gradient(circle, rgba(34,211,238,0.18) 0%, rgba(34,211,238,0) 65%);
+  filter: blur(10px);
+  pointer-events:none;
+}
+
+.interpret-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.interpret-title{
+  font-size: 1.18rem;
+  font-weight: 900;
+  color: rgba(226,232,240,.96) !important;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: .78rem;
+  letter-spacing: .4px;
+  border: 1px solid rgba(148,163,184,0.25);
+  background: rgba(15,23,42,0.35);
+  color: rgba(226,232,240,.92);
+  white-space: nowrap;
+}
+
+.badge-ok{ border-color: rgba(34,197,94,.35) !important; color: rgba(34,197,94,.95) !important; }
+.badge-warn{ border-color: rgba(245,158,11,.35) !important; color: rgba(245,158,11,.95) !important; }
+.badge-bad{ border-color: rgba(239,68,68,.35) !important; color: rgba(239,68,68,.95) !important; }
+
+.interpret-exec{
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(2,6,23,.35);
+  border: 1px solid rgba(148,163,184,0.18);
+  color: rgba(226,232,240,.90) !important;
+  font-size: .92rem;
+  margin-bottom: 12px;
+}
+
+.interpret-text{
+  color: rgba(226,232,240,.88) !important;
+  line-height: 1.45;
+  font-size: .95rem;
+  margin-bottom: 10px;
+}
+
+.interpret-bullets{
+  margin: 0 0 12px 0;
+  padding-left: 18px;
+  color: rgba(226,232,240,.88) !important;
+}
+
+.interpret-bullets li{ margin: 8px 0; }
+
+.interpret-tip{
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(56,189,248,.10);
+  border: 1px solid rgba(56,189,248,.28);
+  color: rgba(226,232,240,.90) !important;
+  margin-top: 8px;
+}
+
+.tip-label{
+  font-weight: 900;
+  color: rgba(34,211,238,.95) !important;
+}
+
+.interpret-note{
+  margin-top: 10px;
+  font-size: .86rem;
+  color: rgba(226,232,240,.72) !important;
+}
+/* =========================
+   FIX: NumberInput visible en SIDEBAR
+   (Filas a previsualizar / cualquier number_input)
+========================= */
+section[data-testid="stSidebar"] [data-testid="stNumberInput"]{
+  margin-bottom: 10px;
+}
+
+section[data-testid="stSidebar"] [data-testid="stNumberInput"] input{
+  background: rgba(2,6,23,0.75) !important;
+  border: 1px solid rgba(148,163,184,0.30) !important;
+  border-radius: 10px !important;
+  color: rgba(255,255,255,0.96) !important;
+  font-weight: 900 !important;
+  caret-color: #22D3EE !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stNumberInput"] input::placeholder{
+  color: rgba(226,232,240,0.45) !important;
+}
+
+/* botones + y - */
+section[data-testid="stSidebar"] [data-testid="stNumberInput"] button{
+  background: rgba(2,6,23,0.70) !important;
+  border: 1px solid rgba(148,163,184,0.30) !important;
+  color: rgba(255,255,255,0.95) !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stNumberInput"] button:hover{
+  border-color: rgba(34,211,238,0.45) !important;
+  color: #22D3EE !important;
+}
+
+/* a veces Streamlit mete el valor en un div interno */
+section[data-testid="stSidebar"] [data-testid="stNumberInput"] div{
+  color: rgba(255,255,255,0.96) !important;
+}
+section[data-testid="stSidebar"] [data-testid="stNumberInput"] input{
+  -webkit-text-fill-color: rgba(255,255,255,0.96) !important;
+}
+
+/* =========================================================
+   NUEVO: DESCARGA WORD (CARD + BOTÓN st.button como rectángulo)
+   - No afecta a st.download_button (CSV) porque es stButton
+========================================================= */
+
+/* Card del bloque */
+.word-card{
+  background: linear-gradient(180deg, rgba(30,41,59,.72), rgba(2,6,23,.55)) !important;
+  border: 1px solid rgba(148,163,184,.22) !important;
+  border-radius: 18px !important;
+  padding: 16px 18px !important;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.35) !important;
+  backdrop-filter: blur(10px) !important;
+  margin-top: 14px !important;
+}
+
+.word-title{
+  font-weight: 900 !important;
+  font-size: 1.12rem !important;
+  color: rgba(255,255,255,.95) !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.word-sub{
+  font-size: .86rem !important;
+  color: rgba(226,232,240,.82) !important;
+  margin: 0 !important;
+}
+
+/* Botón generado por st.button (no es stDownloadButton) */
+div[data-testid="stButton"] > button{
+  width: 100% !important;              /* ✅ rectángulo ancho */
+  min-height: 54px !important;         /* ✅ alto pro */
+  border-radius: 14px !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  background: linear-gradient(135deg, #22D3EE 0%, #38BDF8 55%, #60A5FA 100%) !important;
+  color: #07101D !important;
+  border: none !important;
+  padding: 0.85rem 1rem !important;
+  box-shadow: 0 14px 30px rgba(34,211,238,0.18) !important;
+  transition: filter .15s ease, transform .15s ease !important;
+}
+
+div[data-testid="stButton"] > button:hover{
+  filter: brightness(1.05) !important;
+  transform: translateY(-1px) !important;
+}
